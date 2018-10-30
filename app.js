@@ -5,11 +5,7 @@
     const emailValue = email.value;
     const passwordValue = password.value;*/
     const submit = document.getElementById("submit");
-    const allUser = {};
-    let counter;
-
-
-
+    let allInfo = {};
 
 class User
 {
@@ -51,26 +47,14 @@ submit.onclick = (e) =>
 {
     e.preventDefault();
 
-    function countMyself() {
-        // Check to see if the counter has been initialized
-        if ( typeof countMyself.counter == 'undefined' ) {
-            // It has not... perform the initialization
-            countMyself.counter = 0;
-        }
+    const Person = new User(user.value, email.value, password.value);
+    const personName = Person.getName();
+    const personEmail = Person.getEmail();
+    const personPassword = Person.getPass();
 
-        // Do something stupid to indicate the value
-        console.log(++countMyself.counter);
+    allInfo = {
+        name: personName,
+        email: personEmail,
+        password: personPassword
     }
-
-    countMyself();
-    countMyself();
-    countMyself();
-
-
-
-    console.log(++counter);
-    const Person1 = new User(user.value, email.value, password.value);
-    console.log(Person1.name);
-    console.log(Person1.email);
-    console.log(Person1.password);
 }
