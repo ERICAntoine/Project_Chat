@@ -1,0 +1,22 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Projet Chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERICAntoine/Project_Chat.git"
+  },
+  "author": "Eric Antoine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ERICAntoine/Project_Chat/issues"
+  },
+  "homepage": "https://github.com/ERICAntoine/Project_Chat#readme",
+  "dependencies": {
+    "mongodb": "^3.1.8"
+  }
+}
