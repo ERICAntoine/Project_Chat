@@ -1,11 +1,21 @@
-    const user = document.getElementById("name");
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
-    /*const userValue = user.value;
-    const emailValue = email.value;
-    const passwordValue = password.value;*/
-    const submit = document.getElementById("submit");
-    let allInfo = {};
+const user = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+/*const userValue = user.value;
+const emailValue = email.value;
+const passwordValue = password.value;*/
+const submit = document.getElementById("submit");
+let allInfo = {};
+const MongoClient = require('mongodb').MongoClient;
+
+    MongoClient.connect("mongodb://localhost:27017/chatDatabase", function(err, db)
+    {
+        if(!err)
+        {
+            console.log("We are connected");
+        }
+    })
+
 
 class User
 {
